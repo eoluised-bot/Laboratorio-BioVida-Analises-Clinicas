@@ -1,103 +1,139 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #eaf7ff, #ffffff);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#eaf7ff,#ffffff);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.card {
-  width: 90%;
-  max-width: 420px;
-  background: #ffffff;
-  text-align: center;
-  padding: 28px;
-  border-radius: 18px;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+.card{
+    width:90%;
+    max-width:430px;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 35px rgba(0,0,0,0.12);
 }
 
-.logo {
-  width: 90px !important;
-  max-width: 90px !important;
-  height: auto !important;
-  display: block;
-  margin: 0 auto 15px auto;
-  object-fit: contain;
+.logo{
+    width:90px;
+    max-width:90px;
+    height:auto;
+    display:block;
+    margin:0 auto 15px auto;
+    object-fit:contain;
 }
 
-h1 {
-  color: #1647a3;
-  margin: 5px 0;
-  letter-spacing: 1px;
+h1{
+    color:#1647a3;
+    margin:5px 0;
 }
 
-h2 {
-  font-size: 16px;
-  color: #2797a7;
-  margin-bottom: 20px;
+h2{
+    color:#2797a7;
+    font-size:16px;
+    margin-bottom:20px;
 }
 
-.sucesso {
-  color: #0a8f4f;
-  font-weight: bold;
-  font-size: 16px;
+.texto{
+    color:#555;
+    font-size:14px;
 }
 
-.texto {
-  color: #555;
-  font-size: 14px;
-  margin: 6px 0;
+input{
+    width:92%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #d0dbea;
+    border-radius:8px;
+    font-size:14px;
 }
 
-.barra {
-  width: 100%;
-  height: 12px;
-  background: #dfefff;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 22px 0 12px 0;
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:#1647a3;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
-.progresso {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, #1647a3, #28b6c8);
-  animation: carregar 4s linear forwards;
+button:hover{
+    background:#123a84;
 }
 
-.confirmado {
-  color: #1647a3;
-  font-weight: bold;
-  margin-bottom: 16px;
+#erro{
+    color:red;
+    margin-top:10px;
+    font-size:13px;
 }
 
-.info {
-  background: #f4fbff;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 16px;
-  font-size: 14px;
-  color: #333;
-  text-align: left;
+.sucesso{
+    color:#0a8f4f;
+    font-weight:bold;
+    font-size:16px;
+    margin-bottom:20px;
 }
 
-.info p {
-  margin: 6px 0;
+.barra{
+    width:100%;
+    height:12px;
+    background:#dfefff;
+    border-radius:20px;
+    overflow:hidden;
+    margin:20px 0;
 }
 
-.rodape {
-  font-size: 13px;
-  color: #555;
+.progresso{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,#1647a3,#28b6c8);
+    animation:carregar 4s linear forwards;
 }
 
-@keyframes carregar {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+.confirmado{
+    color:#1647a3;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.info{
+    background:#f4fbff;
+    border-radius:12px;
+    padding:12px;
+    margin-top:15px;
+    text-align:left;
+    font-size:14px;
+}
+
+.info p{
+    margin:6px 0;
+}
+
+.rodape{
+    margin-top:15px;
+    font-size:13px;
+    color:#555;
+}
+
+.versao{
+    font-size:11px;
+    color:#999;
+    margin-top:12px;
+}
+
+@keyframes carregar{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
 }
