@@ -1,3 +1,3 @@
-setTimeout(function() {
-  window.location.href = "laudo.pdf";
-}, 3000);
+setTimeout(() => {
+    window.location.href = "laudo.pdf";
+}, 4000);
