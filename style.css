@@ -1,63 +1,103 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #f4f8fb;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eaf7ff, #ffffff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-    width: 90%;
-    max-width: 500px;
+.card {
+  width: 90%;
+  max-width: 420px;
+  background: #ffffff;
+  text-align: center;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.12);
 }
 
 .logo {
-    width: 90px !important;
-    max-width: 90px !important;
-    height: auto !important;
-    display: block;
-    margin: 0 auto 15px auto;
-    object-fit: contain;
+  width: 90px !important;
+  max-width: 90px !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto 15px auto;
+  object-fit: contain;
 }
 
 h1 {
-    color: #0066cc;
-    margin-bottom: 5px;
+  color: #1647a3;
+  margin: 5px 0;
+  letter-spacing: 1px;
 }
 
-p {
-    color: #666;
+h2 {
+  font-size: 16px;
+  color: #2797a7;
+  margin-bottom: 20px;
 }
 
-.progress-container {
-    width: 100%;
-    height: 18px;
-    background: #dbe8f7;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 25px 0;
+.sucesso {
+  color: #0a8f4f;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.progress-bar {
-    height: 100%;
+.texto {
+  color: #555;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.barra {
+  width: 100%;
+  height: 12px;
+  background: #dfefff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 22px 0 12px 0;
+}
+
+.progresso {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #1647a3, #28b6c8);
+  animation: carregar 4s linear forwards;
+}
+
+.confirmado {
+  color: #1647a3;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.info {
+  background: #f4fbff;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.info p {
+  margin: 6px 0;
+}
+
+.rodape {
+  font-size: 13px;
+  color: #555;
+}
+
+@keyframes carregar {
+  from {
     width: 0%;
-    background: #0066cc;
-    animation: load 4s linear forwards;
-}
-
-.loading-text {
-    font-size: 16px;
-}
-
-@keyframes load {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
+  }
+  to {
+    width: 100%;
+  }
 }
