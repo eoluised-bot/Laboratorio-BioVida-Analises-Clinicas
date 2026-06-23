@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BioVida - Validação de Laudo</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioVida - Validação de Laudos</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
+<div class="card" id="login">
+
+    <img src="logo.png" alt="Logo BioVida" class="logo">
+
+    <h1>BIOVIDA</h1>
+    <h2>Laboratório de Análises Clínicas</h2>
+
+    <p class="texto">
+        Área segura para visualização de laudos laboratoriais
+    </p>
+
+    <input type="text" id="usuario" placeholder="Usuário">
+
+    <input type="password" id="senha" placeholder="Senha">
+
+    <button onclick="entrar()">Acessar Laudo</button>
+
+    <p id="erro"></p>
+
+</div>
+
+<div class="card" id="carregamento" style="display:none;">
+
     <img src="logo.png" alt="Logo BioVida" class="logo">
 
     <h1>BIOVIDA</h1>
@@ -16,27 +38,33 @@
 
     <p class="sucesso">✓ QR Code validado com sucesso</p>
 
-    <p class="texto">Verificando autenticidade do laudo...</p>
-    <p class="texto">Consultando banco de dados seguro...</p>
-    <p class="texto">Preparando visualização do exame...</p>
-
     <div class="barra">
-      <div class="progresso"></div>
+        <div class="progresso"></div>
     </div>
 
-    <p class="confirmado">Documento autêntico confirmado</p>
+    <p class="confirmado">
+        Documento autêntico confirmado
+    </p>
 
     <div class="info">
-      <p><strong>Status:</strong> Laudo localizado</p>
-      <p><strong>Segurança:</strong> Conexão criptografada</p>
-      <p><strong>Validação:</strong> Aprovada</p>
-      <p><strong>Acesso:</strong> Liberado</p>
-      <p><strong>Data:</strong> <span id="data"></span></p>
+        <p><strong>Status:</strong> Laudo localizado</p>
+        <p><strong>Segurança:</strong> Conexão protegida</p>
+        <p><strong>Validação:</strong> Aprovada</p>
+        <p><strong>Acesso:</strong> Liberado</p>
+        <p><strong>Data:</strong> <span id="data"></span></p>
     </div>
 
-    <p class="rodape">🔒 Ambiente seguro de validação laboratorial</p>
-  </div>
+    <p class="rodape">
+        🔒 Ambiente seguro de validação laboratorial
+    </p>
 
-  <script src="script.js"></script>
+    <p class="versao">
+        Sistema de Validação de Laudos v1.0
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
